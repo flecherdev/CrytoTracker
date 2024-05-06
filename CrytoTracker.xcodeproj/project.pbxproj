@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		1DAB4AD92BE7FC0800E7C7B3 /* CrytoTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAB4AD82BE7FC0800E7C7B3 /* CrytoTrackerApp.swift */; };
-		1DAB4ADB2BE7FC0800E7C7B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAB4ADA2BE7FC0800E7C7B3 /* ContentView.swift */; };
 		1DAB4ADD2BE7FC0900E7C7B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DAB4ADC2BE7FC0900E7C7B3 /* Assets.xcassets */; };
 		1DAB4AE02BE7FC0900E7C7B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DAB4ADF2BE7FC0900E7C7B3 /* Preview Assets.xcassets */; };
+		1DAB4AE82BE7FCE300E7C7B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAB4AE72BE7FCE300E7C7B3 /* AppDelegate.swift */; };
+		1DAB4AEC2BE8088200E7C7B3 /* MenuBarContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAB4AEB2BE8088200E7C7B3 /* MenuBarContentView.swift */; };
+		1DAB4AEE2BE80EEB00E7C7B3 /* PopoverContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAB4AED2BE80EEB00E7C7B3 /* PopoverContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1DAB4AD52BE7FC0800E7C7B3 /* CrytoTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrytoTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DAB4AD82BE7FC0800E7C7B3 /* CrytoTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrytoTrackerApp.swift; sourceTree = "<group>"; };
-		1DAB4ADA2BE7FC0800E7C7B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1DAB4ADC2BE7FC0900E7C7B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DAB4ADF2BE7FC0900E7C7B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1DAB4AE12BE7FC0900E7C7B3 /* CrytoTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CrytoTracker.entitlements; sourceTree = "<group>"; };
+		1DAB4AE72BE7FCE300E7C7B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1DAB4AEB2BE8088200E7C7B3 /* MenuBarContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarContentView.swift; sourceTree = "<group>"; };
+		1DAB4AED2BE80EEB00E7C7B3 /* PopoverContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				1DAB4AD82BE7FC0800E7C7B3 /* CrytoTrackerApp.swift */,
-				1DAB4ADA2BE7FC0800E7C7B3 /* ContentView.swift */,
 				1DAB4ADC2BE7FC0900E7C7B3 /* Assets.xcassets */,
 				1DAB4AE12BE7FC0900E7C7B3 /* CrytoTracker.entitlements */,
 				1DAB4ADE2BE7FC0900E7C7B3 /* Preview Content */,
+				1DAB4AE72BE7FCE300E7C7B3 /* AppDelegate.swift */,
+				1DAB4AEB2BE8088200E7C7B3 /* MenuBarContentView.swift */,
+				1DAB4AED2BE80EEB00E7C7B3 /* PopoverContentView.swift */,
 			);
 			path = CrytoTracker;
 			sourceTree = "<group>";
@@ -139,7 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DAB4ADB2BE7FC0800E7C7B3 /* ContentView.swift in Sources */,
+				1DAB4AEE2BE80EEB00E7C7B3 /* PopoverContentView.swift in Sources */,
+				1DAB4AE82BE7FCE300E7C7B3 /* AppDelegate.swift in Sources */,
+				1DAB4AEC2BE8088200E7C7B3 /* MenuBarContentView.swift in Sources */,
 				1DAB4AD92BE7FC0800E7C7B3 /* CrytoTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +287,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,6 +315,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

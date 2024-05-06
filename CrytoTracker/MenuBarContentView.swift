@@ -9,7 +9,15 @@ import SwiftUI
 
 struct MenuBarContentView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(spacing: 4){
+            Image(systemName: "circle.fill")
+                .foregroundColor(.green)
+            VStack(alignment: .trailing, spacing:-2 ){
+                Text("Bitcoin")
+                Text("$4000")
+            }
+            .font(.caption)
+        }
     }
 }
 

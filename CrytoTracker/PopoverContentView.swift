@@ -9,7 +9,17 @@ import SwiftUI
 
 struct PopoverContentView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 16){
+            VStack{
+                Text("Bitcoin").font(.largeTitle)
+                Text("$40,000").font(.title.bold())
+                
+                Divider()
+                Button("Quit"){
+                    NSApp.terminate(self)
+                }
+            }
+        }
     }
 }
 
